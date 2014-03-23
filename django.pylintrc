@@ -19,7 +19,7 @@ persistent=yes
 
 # List of plugins (as comma separated values of python modules names) to load,
 # usually to register additional checkers.
-load-plugins=
+load-plugins=django_pylint
 
 
 [MESSAGES CONTROL]
@@ -33,6 +33,7 @@ load-plugins=
 # can either give multiple identifier separated by comma (,) or put this option
 # multiple time (only on the command line, not in the configuration file where
 # it should appear only once).
+# [C0325(superfluous-parens), ] Unnecessary parens after 'print' keyword
 disable=C0103,C0111,E1102,R0901,R0903,R0904,W0142,W0232
 
 
