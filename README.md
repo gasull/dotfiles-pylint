@@ -35,3 +35,7 @@ if search('^from django', 'npw')
   let g:syntastic_python_pylint_args='--rcfile="$XDG_CONFIG_HOME/pylint/django.pylintrc"'
 endif
 ```
+
+This requires
+[pylint-django plugin](https://github.com/landscapeio/pylint-django)
+(follow link for installation instructions).
