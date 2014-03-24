@@ -1,4 +1,6 @@
-[MASTER]
+# See http://docs.pylint.org/features.html
+
+[GENERAL]
 # Specify a configuration file.
 #rcfile=
 
@@ -12,13 +14,21 @@ load-plugins=pylint_django
 
 # Disable the message, report, category or checker with the given id(s). You
 # can give multiple identifier separated by commas (,).
-#disable=C0103,C0111,E1102,R0901,R0903,R0904,W0142,W0232
 # too-many-ancestors (R0901)
 disable=R0901
 
 
-#[TYPECHECK]
+[DESIGN]
+
+# Maximum number of public methods for a class (see R0904).
+max-public-methods=40
+
+# Minimum number of public methods for a class (see R0903).
+min-public-methods=1
+
+
+[TYPECHECK]
 
 # List of members which are set dynamically and missed by pylint inference
 # system, and so shouldn't trigger E0201 when accessed.
-#generated-members=REQUEST,acl_users,aq_parent,objects,DoesNotExist
+generated-members=REQUEST,acl_users,aq_parent,DoesNotExist,objects,request
