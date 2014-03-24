@@ -12,7 +12,6 @@ my configuration files in the standard $XDG_CONFIG_HOME (~/.config by default).
 cd ~/src/
 git clone https://github.com/gasull/dotfiles-pylint.git
 cd ~/.config
-ln -s
 ln -s ~/src/dotfiles-pylint/pylint
 ```
 
