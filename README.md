@@ -27,9 +27,10 @@ Optional: Configure .vimrc to use django.pylintrc in
 
 ```vim
 " Syntastic for Django files
-if search('^from django', 'npw')
-  let g:syntastic_python_pylint_args='--rcfile="$XDG_CONFIG_HOME/pylint/django.pylintrc"'
-endif
+autocmd FileType python
+    \ if search('^from django', 'npw') |
+    \ let g:syntastic_python_pylint_args="--rcfile=$XDG_CONFIG_HOME/pylint/django.pylintrc" |
+    \ endif
 ```
 
 This requires
