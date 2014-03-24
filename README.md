@@ -3,9 +3,6 @@ pylintrc files
 
 My global pylintrc and my django.pylintrc for Django projects.
 
-django.pylintrc was originally created by
-[TomasFlam](https://github.com/TomasFlam).
-
 ## Installation
 
 Put django.pylintrc in your PYLINTRC environment variable.  I like to keep all
