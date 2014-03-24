@@ -3,4 +3,5 @@
 # Disable the message, report, category or checker with the given id(s). You
 # can give multiple identifier separated by commas (,).
 # [C0325(superfluous-parens), ] Unnecessary parens after 'print' keyword
+#   (Better for compatibility with Python 3)
 disable=C0325
