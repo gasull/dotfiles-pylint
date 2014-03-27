@@ -14,9 +14,10 @@ load-plugins=pylint_django
 
 # Disable the message, report, category or checker with the given id(s). You
 # can give multiple identifier separated by commas (,).
+# no-member (E1101)
 # too-many-ancestors (R0901)
 # too-few-public-methods (R0903)
-disable=R0901,R0903
+disable=E1101,R0901,R0903
 
 
 [DESIGN]
